@@ -1,12 +1,15 @@
 ---
-　　layout: default
-　　title: vue项目编译自动更新packcage.json版本号
-  
+layout: post
+title: "vue编译自动更新packcage版本"
+categories: vue
+author: "Liz"
 ---
+
+vue项目编译时候，需要显示一个版本号，本文的方式可以编译时自动更新packcage.json版本号
 
 vue.config.js中定义插件
 
-"
+
 ```js
 chainWebpack: config => {
   const VersionPlugin = require('./src/versionPlugin')
@@ -15,11 +18,11 @@ chainWebpack: config => {
   })
 }
 ```
-"
+
 
 versionPlugin读取package.json修改版本号
 
-"
+
 ```js
 const fs = require('fs')
 const path = require('path')
@@ -50,4 +53,4 @@ function getDateStr () {
 
 module.exports = VersionPlugin
 ```
-"
+
