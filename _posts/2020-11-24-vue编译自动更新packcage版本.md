@@ -54,3 +54,4 @@ function getDateStr () {
 module.exports = VersionPlugin
 ```
 
+注：参考并引用：https://blog.csdn.net/milugloomy/article/details/109441169
