@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "vue运行时偶尔会出现无法找到`node-sass`的问题"
+title: "vue安装`node-sass`的问题"
 categories: vue
 author: "Liz"
 ---
 
-可使用以下命令
+vue运行时偶尔会出现无法找到`node-sass`的问题,可使用以下命令
 `
 npm i node-sass -D
 `
